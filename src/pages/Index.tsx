@@ -62,8 +62,13 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="Smile" size={28} className="text-primary" />
+          <div className="flex items-center gap-3">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-50 rounded-full"></div>
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl">
+                <Icon name="Camera" size={24} className="text-white" />
+              </div>
+            </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Смайл ТВ
             </span>
@@ -314,8 +319,13 @@ export default function Index() {
 
       <footer className="py-12 px-6 border-t border-border">
         <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Icon name="Smile" size={24} className="text-primary" />
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-50 rounded-full"></div>
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl">
+                <Icon name="Camera" size={20} className="text-white" />
+              </div>
+            </div>
             <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Смайл ТВ
             </span>
