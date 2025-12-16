@@ -63,9 +63,9 @@ export default function Index() {
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Icon name="Eye" size={28} className="text-primary" />
+            <Icon name="Smile" size={28} className="text-primary" />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              SecureVision
+              Смайл ТВ
             </span>
           </div>
           <div className="hidden md:flex gap-8">
@@ -212,7 +212,7 @@ export default function Index() {
             </h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                <span className="text-primary font-semibold">SecureVision</span> — профессиональная компания по установке систем видеонаблюдения 
+                <span className="text-primary font-semibold">Смайл ТВ</span> — профессиональная компания по установке систем видеонаблюдения 
                 с 8-летним опытом работы на рынке безопасности.
               </p>
               <p>
@@ -299,7 +299,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Mail" size={20} className="text-secondary" />
-                    <span>info@securevision.ru</span>
+                    <span>info@smile-tv.ru</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="MapPin" size={20} className="text-accent" />
@@ -315,13 +315,13 @@ export default function Index() {
       <footer className="py-12 px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Icon name="Eye" size={24} className="text-primary" />
+            <Icon name="Smile" size={24} className="text-primary" />
             <span className="text-xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              SecureVision
+              Смайл ТВ
             </span>
           </div>
           <p className="text-muted-foreground">
-            © 2025 SecureVision. Все права защищены.
+            © 2025 Смайл ТВ. Все права защищены.
           </p>
         </div>
       </footer>
