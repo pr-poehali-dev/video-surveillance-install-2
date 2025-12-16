@@ -295,7 +295,7 @@ export default function Index() {
                   </a>
                 </Button>
                 <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-                  <a href="https://vk.com/im?sel=-your_vk_id" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <a href="https://max.ru/u/f9LHodD0cOLSuVUKxqghEZhtw7peiJt9l6Oe0kSqceScmziIoaqY2k9FzUw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Icon name="MessageSquare" size={20} />
                     MAX
                   </a>
