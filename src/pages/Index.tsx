@@ -60,9 +60,9 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background relative">
-      <div className="fixed inset-0 z-0 opacity-5">
+      <div className="fixed inset-0 z-0 opacity-10">
         <img 
-          src="https://cdn.poehali.dev/projects/76910aee-9bb0-4138-bc10-b3211fccd320/files/adc65217-b084-4084-a20e-5d6661bd072a.jpg" 
+          src="https://cdn.poehali.dev/projects/76910aee-9bb0-4138-bc10-b3211fccd320/files/7611ea9c-513d-47e7-8757-2f98e05d60c7.jpg" 
           alt="Background pattern"
           className="w-full h-full object-cover"
         />
