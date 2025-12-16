@@ -70,11 +70,17 @@ export default function Index() {
               Смайл ТВ
             </span>
           </div>
-          <div className="hidden md:flex gap-8">
-            <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
-            <a href="#portfolio" className="text-foreground/80 hover:text-primary transition-colors">Портфолио</a>
-            <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О нас</a>
-            <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
+          <div className="flex items-center gap-8">
+            <div className="hidden md:flex gap-8">
+              <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
+              <a href="#portfolio" className="text-foreground/80 hover:text-primary transition-colors">Портфолио</a>
+              <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О нас</a>
+              <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
+            </div>
+            <a href="tel:+79196208360" className="flex items-center gap-2 text-2xl font-bold text-primary hover:text-secondary transition-colors">
+              <Icon name="Phone" size={28} />
+              <span className="hidden lg:inline">+7 919-620-83-60</span>
+            </a>
           </div>
         </nav>
       </header>
