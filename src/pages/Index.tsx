@@ -110,8 +110,10 @@ export default function Index() {
                   <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-2 text-lg px-8">
-                Посмотреть объекты
+              <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
+                <a href="#portfolio">
+                  Посмотреть объекты
+                </a>
               </Button>
             </div>
           </div>
