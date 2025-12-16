@@ -98,7 +98,7 @@ export default function Index() {
             <div className="mb-8 animate-scale-in">
               <a href="tel:+79196208360" className="inline-flex items-center gap-2 sm:gap-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform">
                 <Icon name="Phone" size={36} className="text-primary animate-pulse-glow sm:w-12 sm:h-12" />
-                <span className="break-all my-0 py-0 text-base">+7 919-620-83-60</span>
+                <span className="break-all my-0 py-0 text-6xl">+7 919-620-83-60</span>
               </a>
               <p className="text-base sm:text-lg text-muted-foreground mt-3">Звоните прямо сейчас!</p>
             </div>
