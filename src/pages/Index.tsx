@@ -58,58 +58,58 @@ export default function Index() {
       </div>
       <div className="relative z-10">
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
-        <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+        <nav className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+          <div className="flex items-center gap-2 sm:gap-3">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg rounded-full animate-pulse-glow"></div>
-              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl animate-float group-hover:scale-110 transition-transform duration-300">
-                <Icon name="Camera" size={24} className="text-white" />
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-1.5 sm:p-2 rounded-xl sm:rounded-2xl animate-float group-hover:scale-110 transition-transform duration-300">
+                <Icon name="Camera" size={20} className="text-white sm:w-6 sm:h-6" />
               </div>
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <span className="text-lg sm:text-xl md:text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Смайл ТВ
             </span>
           </div>
-          <div className="flex items-center gap-8">
-            <div className="hidden md:flex gap-8">
+          <div className="flex items-center gap-3 sm:gap-8">
+            <div className="hidden md:flex gap-4 lg:gap-8 text-sm lg:text-base">
               <a href="#services" className="text-foreground/80 hover:text-primary transition-colors">Услуги</a>
               <a href="#portfolio" className="text-foreground/80 hover:text-primary transition-colors">Портфолио</a>
               <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О нас</a>
               <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
             </div>
-            <a href="tel:+79196208360" className="flex items-center gap-2 text-2xl font-bold text-primary hover:text-secondary transition-colors">
-              <Icon name="Phone" size={28} />
+            <a href="tel:+79196208360" className="flex items-center gap-1 sm:gap-2 text-lg sm:text-xl md:text-2xl font-bold text-primary hover:text-secondary transition-colors">
+              <Icon name="Phone" size={20} className="sm:w-7 sm:h-7" />
               <span className="hidden lg:inline">+7 919-620-83-60</span>
             </a>
           </div>
         </nav>
       </header>
 
-      <section className="pt-32 pb-20 px-6">
+      <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%]">
               Видеонаблюдение под ключ
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
               Профессиональная установка систем безопасности для вашего бизнеса и дома. 
               Современное оборудование, быстрый монтаж, гарантия качества.
             </p>
             <div className="mb-8 animate-scale-in">
-              <a href="tel:+79196208360" className="inline-flex items-center gap-3 text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform">
-                <Icon name="Phone" size={48} className="text-primary animate-pulse-glow" />
-                +7 919-620-83-60
+              <a href="tel:+79196208360" className="inline-flex items-center gap-2 sm:gap-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform">
+                <Icon name="Phone" size={36} className="text-primary animate-pulse-glow sm:w-12 sm:h-12" />
+                <span className="break-all">+7 919-620-83-60</span>
               </a>
-              <p className="text-lg text-muted-foreground mt-3">Звоните прямо сейчас!</p>
+              <p className="text-base sm:text-lg text-muted-foreground mt-3">Звоните прямо сейчас!</p>
             </div>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8 group">
-                <a href="#contact">
+            <div className="flex gap-3 sm:gap-4 justify-center flex-wrap px-4">
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-base sm:text-lg px-4 sm:px-8 group">
+                <a href="#contact" className="flex items-center">
                   Получить консультацию
                   <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 text-lg px-8">
+              <Button asChild size="lg" variant="outline" className="border-2 text-base sm:text-lg px-4 sm:px-8">
                 <a href="#portfolio">
                   Посмотреть объекты
                 </a>
@@ -119,7 +119,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 px-6 relative overflow-hidden">
+      <section className="py-12 sm:py-20 px-4 sm:px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 opacity-30"></div>
         <div className="container mx-auto relative">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -151,12 +151,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="services" className="py-20 px-6">
+      <section id="services" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Наши услуги
           </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">
             Полный спектр услуг по видеонаблюдению
           </p>
           <div className="grid md:grid-cols-2 gap-8">
@@ -187,12 +187,12 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="portfolio" className="py-20 px-6 bg-muted/30">
+      <section id="portfolio" className="py-12 sm:py-20 px-4 sm:px-6 bg-muted/30">
         <div className="container mx-auto">
-          <h2 className="text-5xl font-bold text-center mb-4 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
             Наши объекты
           </h2>
-          <p className="text-center text-muted-foreground mb-16 text-lg">
+          <p className="text-center text-muted-foreground mb-12 sm:mb-16 text-base sm:text-lg">
             Реализованные проекты с установленным видеонаблюдением
           </p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -220,13 +220,13 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-6">
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center animate-fade-in">
-            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent">
               О компании
             </h2>
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
               <p>
                 <span className="text-primary font-semibold">Смайл ТВ</span> — профессиональная компания по установке систем видеонаблюдения 
                 с 15-летним опытом работы на рынке безопасности.
@@ -241,60 +241,60 @@ export default function Index() {
                 торговые центры, офисные здания, складские комплексы, частные дома и коттеджи.
               </p>
             </div>
-            <div className="mt-12 flex justify-center gap-8 flex-wrap">
-              <div className="flex items-center gap-3">
-                <Icon name="Award" size={32} className="text-primary" />
-                <span className="text-lg">Сертификаты качества</span>
+            <div className="mt-8 sm:mt-12 flex justify-center gap-4 sm:gap-8 flex-wrap">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Icon name="Award" size={24} className="text-primary sm:w-8 sm:h-8" />
+                <span className="text-sm sm:text-base md:text-lg">Сертификаты качества</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Icon name="Users" size={32} className="text-secondary" />
-                <span className="text-lg">Опытная команда</span>
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Icon name="Users" size={24} className="text-secondary sm:w-8 sm:h-8" />
+                <span className="text-sm sm:text-base md:text-lg">Опытная команда</span>
               </div>
-              <div className="flex items-center gap-3">
-                <Icon name="Clock" size={32} className="text-accent" />
-                <span className="text-lg">Быстрый монтаж</span>
+              <div className="flex items-center gap-2 sm:gap-3">
+                <Icon name="Clock" size={24} className="text-accent sm:w-8 sm:h-8" />
+                <span className="text-sm sm:text-base md:text-lg">Быстрый монтаж</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6 bg-muted/30">
+      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 bg-muted/30">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Свяжитесь с нами
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-base sm:text-lg">
               Свяжитесь с нами для консультации
             </p>
           </div>
           <Card className="bg-card/50 backdrop-blur border-primary/20 animate-scale-in">
             <CardContent className="p-8">
-              <div className="flex justify-center gap-8 flex-wrap mb-8">
+              <div className="flex justify-center gap-4 sm:gap-8 flex-wrap mb-8 text-sm sm:text-base">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={20} className="text-primary" />
-                  <span>+7 919-620-83-60</span>
+                  <span className="break-all">+7 919-620-83-60</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Mail" size={20} className="text-secondary" />
-                  <span>info@stv16.ru</span>
+                  <span className="break-all">info@stv16.ru</span>
                 </div>
               </div>
-              <div className="flex justify-center gap-4 flex-wrap">
-                <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BA5A] text-white">
+              <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
+                <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BA5A] text-white text-sm sm:text-base px-4 sm:px-6">
                   <a href="https://wa.me/79196208360" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Icon name="MessageCircle" size={20} />
                     WhatsApp
                   </a>
                 </Button>
-                <Button asChild size="lg" className="bg-[#0088cc] hover:bg-[#0077b5] text-white">
+                <Button asChild size="lg" className="bg-[#0088cc] hover:bg-[#0077b5] text-white text-sm sm:text-base px-4 sm:px-6">
                   <a href="https://t.me/+79196208360" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Icon name="Send" size={20} />
                     Telegram
                   </a>
                 </Button>
-                <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+                <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-sm sm:text-base px-4 sm:px-6">
                   <a href="https://max.ru/u/f9LHodD0cOLSuVUKxqghEZhtw7peiJt9l6Oe0kSqceScmziIoaqY2k9FzUw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                     <Icon name="MessageSquare" size={20} />
                     MAX
@@ -306,7 +306,7 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="py-12 px-6 border-t border-border">
+      <footer className="py-8 sm:py-12 px-4 sm:px-6 border-t border-border">
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="relative">
