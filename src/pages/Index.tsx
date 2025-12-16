@@ -316,7 +316,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="MapPin" size={20} className="text-accent" />
-                    <span>Москва, ул. Примерная, 1</span>
+                    <span></span>
                   </div>
                 </div>
               </div>
