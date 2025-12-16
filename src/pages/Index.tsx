@@ -53,9 +53,29 @@ export default function Index() {
     }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    
+    try {
+      const response = await fetch('https://functions.poehali.dev/deef76c3-e649-4473-a16a-2f917cf7c0ec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
+        setFormData({ name: '', phone: '', message: '' });
+      } else {
+        alert('Ошибка отправки: ' + (result.error || 'Попробуйте позже'));
+      }
+    } catch (error) {
+      alert('Ошибка соединения. Проверьте интернет и попробуйте снова.');
+    }
   };
 
   return (
