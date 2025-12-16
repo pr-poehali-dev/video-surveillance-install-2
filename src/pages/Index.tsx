@@ -258,7 +258,7 @@ export default function Index() {
           </div>
           <Card className="bg-card/50 backdrop-blur border-primary/20 animate-scale-in">
             <CardContent className="p-8">
-              <div className="flex justify-center gap-8 flex-wrap">
+              <div className="flex justify-center gap-8 flex-wrap mb-8">
                 <div className="flex items-center gap-2">
                   <Icon name="Phone" size={20} className="text-primary" />
                   <span>+7 919-620-83-60</span>
@@ -267,6 +267,26 @@ export default function Index() {
                   <Icon name="Mail" size={20} className="text-secondary" />
                   <span>info@stv16.ru</span>
                 </div>
+              </div>
+              <div className="flex justify-center gap-4 flex-wrap">
+                <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#20BA5A] text-white">
+                  <a href="https://wa.me/79196208360" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Icon name="MessageCircle" size={20} />
+                    WhatsApp
+                  </a>
+                </Button>
+                <Button asChild size="lg" className="bg-[#0088cc] hover:bg-[#0077b5] text-white">
+                  <a href="https://t.me/+79196208360" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Icon name="Send" size={20} />
+                    Telegram
+                  </a>
+                </Button>
+                <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+                  <a href="https://vk.com/im?sel=-your_vk_id" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Icon name="MessageSquare" size={20} />
+                    VK
+                  </a>
+                </Button>
               </div>
             </CardContent>
           </Card>
