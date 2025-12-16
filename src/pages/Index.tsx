@@ -88,7 +88,7 @@ export default function Index() {
       <section className="pt-24 sm:pt-32 pb-12 sm:pb-20 px-4 sm:px-6">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%] text-2xl">
+            <h1 className="sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-gradient-shift bg-[length:200%_200%] text-xl">
               Видеонаблюдение под ключ
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto px-4">
@@ -98,7 +98,7 @@ export default function Index() {
             <div className="mb-8 animate-scale-in">
               <a href="tel:+79196208360" className="inline-flex items-center gap-2 sm:gap-3 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform">
                 <Icon name="Phone" size={36} className="text-primary animate-pulse-glow sm:w-12 sm:h-12" />
-                <span className="break-all my-0 py-0 text-6xl">+7 919-620-83-60</span>
+                <span className="break-all my-0 py-0 text-base">+7 919-620-83-60</span>
               </a>
               <p className="text-base sm:text-lg text-muted-foreground mt-3">Звоните прямо сейчас!</p>
             </div>
