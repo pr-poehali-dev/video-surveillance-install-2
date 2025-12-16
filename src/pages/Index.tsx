@@ -115,7 +115,7 @@ export default function Index() {
             </Card>
             <Card className="text-center p-8 bg-card/50 backdrop-blur border-secondary/20 hover:border-secondary/50 transition-all hover:scale-105 animate-scale-in" style={{animationDelay: '0.1s'}}>
               <CardContent className="pt-6">
-                <div className="text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">8</div>
+                <div className="text-5xl font-bold bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent mb-2">15</div>
                 <div className="text-muted-foreground">Лет опыта</div>
               </CardContent>
             </Card>
@@ -213,7 +213,7 @@ export default function Index() {
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
                 <span className="text-primary font-semibold">Смайл ТВ</span> — профессиональная компания по установке систем видеонаблюдения 
-                с 8-летним опытом работы на рынке безопасности.
+                с 15-летним опытом работы на рынке безопасности.
               </p>
               <p>
                 Мы специализируемся на комплексных решениях для бизнеса и частных клиентов: 
