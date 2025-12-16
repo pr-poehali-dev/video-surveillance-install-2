@@ -95,6 +95,13 @@ export default function Index() {
               Профессиональная установка систем безопасности для вашего бизнеса и дома. 
               Современное оборудование, быстрый монтаж, гарантия качества.
             </p>
+            <div className="mb-8 animate-scale-in">
+              <a href="tel:+79196208360" className="inline-flex items-center gap-3 text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent hover:scale-105 transition-transform">
+                <Icon name="Phone" size={48} className="text-primary animate-pulse-glow" />
+                +7 919-620-83-60
+              </a>
+              <p className="text-lg text-muted-foreground mt-3">Звоните прямо сейчас!</p>
+            </div>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8 group">
                 <a href="#contact">
