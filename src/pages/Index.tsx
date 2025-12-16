@@ -59,7 +59,15 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <div className="fixed inset-0 z-0 opacity-5">
+        <img 
+          src="https://cdn.poehali.dev/projects/76910aee-9bb0-4138-bc10-b3211fccd320/files/abdf8512-6fed-4d46-91ba-36a6e4efe632.jpg" 
+          alt="Background pattern"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="relative z-10">
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -335,6 +343,7 @@ export default function Index() {
           </p>
         </div>
       </footer>
+      </div>
     </div>
   );
 }
