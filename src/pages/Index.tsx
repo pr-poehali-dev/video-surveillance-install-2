@@ -63,9 +63,9 @@ export default function Index() {
       <header className="fixed top-0 w-full bg-background/80 backdrop-blur-lg border-b border-border z-50">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-50 rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg rounded-full animate-pulse-glow"></div>
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl animate-float group-hover:scale-110 transition-transform duration-300">
                 <Icon name="Camera" size={24} className="text-white" />
               </div>
             </div>
@@ -321,8 +321,8 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg opacity-50 rounded-full"></div>
-              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary blur-lg rounded-full animate-pulse-glow"></div>
+              <div className="relative bg-gradient-to-br from-primary via-secondary to-accent p-2 rounded-2xl animate-float">
                 <Icon name="Camera" size={20} className="text-white" />
               </div>
             </div>
