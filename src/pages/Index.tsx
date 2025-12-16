@@ -104,9 +104,11 @@ export default function Index() {
               Современное оборудование, быстрый монтаж, гарантия качества.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8 group">
-                Получить консультацию
-                <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <Button asChild size="lg" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-lg px-8 group">
+                <a href="#contact">
+                  Получить консультацию
+                  <Icon name="ArrowRight" size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="border-2 text-lg px-8">
                 Посмотреть объекты
