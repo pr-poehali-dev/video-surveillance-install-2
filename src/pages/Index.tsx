@@ -312,7 +312,7 @@ export default function Index() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="Mail" size={20} className="text-secondary" />
-                    <span>info@smile-tv.ru</span>
+                    <span>info@stv16.ru</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Icon name="MapPin" size={20} className="text-accent" />
