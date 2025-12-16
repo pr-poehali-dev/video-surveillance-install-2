@@ -1,16 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import Icon from "@/components/ui/icon";
-import { useState } from "react";
 
 export default function Index() {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    message: ""
-  });
 
   const services = [
     {
@@ -53,30 +45,7 @@ export default function Index() {
     }
   ];
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    try {
-      const response = await fetch('https://functions.poehali.dev/deef76c3-e649-4473-a16a-2f917cf7c0ec', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      });
-      
-      const result = await response.json();
-      
-      if (response.ok) {
-        alert('Заявка отправлена! Мы свяжемся с вами в ближайшее время.');
-        setFormData({ name: '', phone: '', message: '' });
-      } else {
-        alert('Ошибка отправки: ' + (result.error || 'Попробуйте позже'));
-      }
-    } catch (error) {
-      alert('Ошибка соединения. Проверьте интернет и попробуйте снова.');
-    }
-  };
+
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -284,57 +253,19 @@ export default function Index() {
               Свяжитесь с нами
             </h2>
             <p className="text-muted-foreground text-lg">
-              Оставьте заявку и получите бесплатную консультацию
+              Свяжитесь с нами для консультации
             </p>
           </div>
           <Card className="bg-card/50 backdrop-blur border-primary/20 animate-scale-in">
             <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Ваше имя</label>
-                  <Input 
-                    placeholder="Иван Иванов"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="bg-background border-border focus:border-primary"
-                  />
+              <div className="flex justify-center gap-8 flex-wrap">
+                <div className="flex items-center gap-2">
+                  <Icon name="Phone" size={20} className="text-primary" />
+                  <span>+7 919-620-83-60</span>
                 </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Телефон</label>
-                  <Input 
-                    placeholder="+7 (999) 123-45-67"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                    className="bg-background border-border focus:border-primary"
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium mb-2">Сообщение</label>
-                  <Textarea 
-                    placeholder="Расскажите о вашем объекте..."
-                    rows={4}
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="bg-background border-border focus:border-primary resize-none"
-                  />
-                </div>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-gradient-to-r from-primary via-secondary to-accent hover:opacity-90 text-lg py-6"
-                >
-                  Отправить заявку
-                </Button>
-              </form>
-              <div className="mt-8 pt-8 border-t border-border">
-                <div className="flex justify-center gap-8 flex-wrap">
-                  <div className="flex items-center gap-2">
-                    <Icon name="Phone" size={20} className="text-primary" />
-                    <span>+7 919-620-83-60</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Mail" size={20} className="text-secondary" />
-                    <span>info@stv16.ru</span>
-                  </div>
+                <div className="flex items-center gap-2">
+                  <Icon name="Mail" size={20} className="text-secondary" />
+                  <span>info@stv16.ru</span>
                 </div>
               </div>
             </CardContent>
