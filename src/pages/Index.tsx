@@ -87,9 +87,6 @@ export default function Index() {
             <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">О нас</a>
             <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
-            Заказать звонок
-          </Button>
         </nav>
       </header>
 
